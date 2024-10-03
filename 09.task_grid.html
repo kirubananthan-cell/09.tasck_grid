@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08grid</title> 
+    <style>
+        body{
+            display: grid;
+            background-color: burlywood;
+   }
+        *
+        {
+            margin: 0;
+            bottom: 0;
+        }
+
+    .box1
+    {
+        background-color: red;
+    }
+    .box2{
+        background-color: rgb(79, 79, 17);
+    }
+    .box3{
+        background-color: orange;
+    }
+    .box4{
+        background-color: gray;
+    }
+    .box5{
+        background-color: rgb(240, 240, 245);
+    }
+    .box6{
+        background-color: rgb(205, 54, 62);
+    }
+    .box7{
+        background-color:rgb(249, 247, 247);
+    }
+    .box8{
+        background-color: rgb(57, 40, 79);
+    }
+    .box9{
+        background-color: rgb(230, 43, 43);  
+     } 
+     .grid{
+    display: grid;
+    height: 550px;
+    width: 750px;
+    grid-template-rows:repeat(5,100px) ;
+    grid-template-columns: repeat(6,150px);
+    position: relative;
+            top: 250px;
+            left: 350px;
+            border: 5px solid black;
+            height: 400px;
+     }
+     .grid-iteam{
+        border: 5px solid black;
+     }
+     
+     .box1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+     }
+     .box2{
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+     }
+     .box3{
+        grid-column-start:4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+     }
+     .box4{
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+     }
+     .box5{
+        grid-column-start:3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+     }
+     .box6{
+        grid-column-start:5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 5;
+     }
+     .box7{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+     }
+     .box8{
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+     }
+     .box9{
+        grid-column-start:4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+     }
+    </style>
+</head>
+<body>
+    <div  class="grid">
+    <div class="box1 grid-iteam"></div>
+    <div class="box2 grid-iteam"></div>
+    <div class="box3 grid-iteam"></div>
+    <div class="box4 grid-iteam"></div>
+    <div class="box5 grid-iteam"></div>
+    <div class="box6 grid-iteam"></div>
+    <div class="box7 grid-iteam"></div>
+    <div class="box8 grid-iteam"></div>
+    <div class="box9 grid-iteam"></div>
+    </div>
+    
+</body>
+</html>
